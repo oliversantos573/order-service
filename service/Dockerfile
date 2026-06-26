@@ -2,14 +2,12 @@
 FROM eclipse-temurin:21-jdk AS build
 WORKDIR /app
 
-# Copiar Maven Wrapper e arquivos necessários
-COPY mvnw .
-COPY .mvn .mvn
+# Copiar arquivos necessários
 COPY pom.xml .
 COPY src ./src
 
 # Compilar o projeto
-RUN ./mvnw package -DskipTests
+RUN mvn package -DskipTests
 
 # Etapa final
 FROM eclipse-temurin:21-jre
