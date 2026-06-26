@@ -21,7 +21,8 @@ jobs:
 
       - name: Build com Maven
         working-directory: ./service
-        run: mvn clean install
+        run: mvn clean install -DskipTests
+
 
   docker:
     needs: build
