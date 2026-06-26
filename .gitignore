@@ -1,0 +1,38 @@
+# Compilação
+target/
+build/
+
+# Arquivos de log
+*.log
+
+# Configurações locais
+*.iml
+.idea/
+.vscode/
+*.class
+
+# Dependências
+*.jar
+*.war
+*.ear
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Maven Wrapper
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+
+# Credenciais e configs sensíveis
+application.properties
+application.yml
